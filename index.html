@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Bar Restaurant L'Ambassade - Rouen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <meta property="og:image" content="https://ambassade-rouen.fr/images/plat%20(13).jpg" />
+  <meta property="og:type" content="Food Service" />
+  <meta property="og:title" content="Votre meilleure cuisine africaine de Rouen chez l'Ambassade" />
+  <meta property="og:description"
+    content="Réservez votre commande en ligne et retrouvez toutes les délices de la cuisine camerounaise au Bar restaurant l'ambassade" />
+  <meta property="og:url" content="https://ambassade-rouen.fr/" />
+  <meta property="og:site_name" content="Votre Restaurant camerounais de Rouen : L'Ambassade" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    form .form-control {
+      color: #333 !important;
+    }
+
+    .ftco-navbar-light {
+      background: black !important;
+    }
+
+    .ftco-navbar-light.scrolled.awake,
+    .ftco-navbar-light.scrolled .navbar-brand {
+      background: black !important;
+
+    }
+
+
+    .basket-box {
+      cursor: pointer;
+      background: #fff;
+      color: darkgoldenrod;
+      font-size: 1.2rem;
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      top: 45vh;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 40rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 100000;
+      box-shadow: 0px 0px 2px 5px darkgoldenrod;
+    }
+
+    .basket-content {
+      position: relative;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 40rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .basket-content::after {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      left: -3px;
+      top: -5px;
+      content: attr(data-count);
+      background: darkgoldenrod;
+      color: white;
+      border-radius: 3rem;
+      width: 1.32rem;
+      height: 1.32rem;
+      font-size: 0.7rem;
+      font-weight: bolder;
+    }
+
+
+    .basket-content-elt .single-menu {
+      padding: 0;
+      margin-top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href=""><img src="" id="logo" style=" height: 40px;" /></a>
+      <!-- <a class="navbar-brand" href="">L'Ambassade<br><small>Bar-Restaurant</small></a> -->
+      <!-- <a class="navbar-toggler" href="https://wa.me/237695762595">📞 <i style="font-style: normal;"
+          class="phone-contact"></i></a> -->
+
+    </div>
+  </nav>
+  <!-- END nav -->
+
+
+  <section id="menu" class="ftco-section" style="padding-bottom: 0;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7 heading-section ftco-animate text-center">
+          <h2 class="mb-4 restaurant_name">...</h2>
+          <p class="restaurant_description">...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="" class="ftco-menu">
+    <div class="container-fluid">
+      <div class="row d-md-flex">
+        <!-- <div class="col-lg-4 ftco-animate img f-menu-img mb-5 mb-md-0" style="background-image: url(images/about.jpg);">
+        </div> -->
+        <div class="col-lg-12 ftco-animate p-md-5">
+          <div class="row">
+            <div class="col-md-12 nav-link-wrap mb-5">
+              <div class="nav ftco-animate nav-pills justify-content-center" id="v-pills-tab" role="tablist"
+                aria-orientation="vertical">
+
+
+              </div>
+            </div>
+            <div class="col-md-12 d-flex align-items-center ">
+              <div class="tab-content ftco-animate w-100" id="v-pills-tabContent">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="ftco-footer ftco-section img">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-6 col-md-6 mb-5 mb-md-5">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">À propos de nous</h2>
+            <p class="shop_description_footer"></p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              <!-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-5 mb-md-5">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Contacts</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text address"></span>
+                </li>
+                <li><a href="tel:+33782789689"><span class="icon icon-phone"></span><span class="text phone"></span></a>
+                </li>
+                <li><a href="mailto:contact@genuka.com" class="email"><span class="icon icon-envelope"></span><span
+                      class="text email-text">contact@genuka.com</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p>
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved <a
+              href="https://ambassade-rouen.fr" class="shop-footer"></a>. Boutique propulsée par <a
+              href="https://genuka.com" target="_blank"><span style="color: goldenrod;">Genuka</span></a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalScrollableTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-dark" id="cartModalScrollableTitle">Panier</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body cart_container">
+          
+          <!-- <hr/>
+          <br>
+          Les frais de livraison dépendent du nombre de la taille de votre commande et de la distance. Pour en savoir
+          plus, merci de nous appeler. -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary order_btn" onclick="order()">Passer la commande (<span class="total text-white"></span>)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="livraisonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-dark" id="exampleModalScrollableTitle">Livraison</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Notre service de livraison est actuellement disponible le <span class="text-primary">Vendredi</span> et le
+          <span class="text-primary">Samedi</span>, dans la ville de Rouen.
+          <br>
+          <br>
+          Les frais de livraison dépendent du nombre de la taille de votre commande et de la distance. Pour en savoir
+          plus, merci de nous appeler.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">D'accord</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="commanderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-dark" id="exampleModalScrollableTitle">Commander</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form name="commanderForm" class="text-dark">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="names">Prénom & Nom</label>
+                <input type="text" class="form-control" id="names" name="names" placeholder="Prénoms & noms" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="tel">Numéro de téléphone</label>
+                <input type="tel" class="form-control" id="tel" name="tel" placeholder="Numéro de téléphone" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="adresse">Adresse</label>
+              <input type="text" class="form-control" id="adresse" name="adresse" placeholder="Votre adresse" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="commande">Commande</label>
+                <input type="text" class="form-control" id="commande" name="commande"
+                  placeholder="Nom de votre commande" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="quantite">Quantité</label>
+                <input type="number" min="1" value="1" class="form-control" id="tel" name="quantite"
+                  placeholder="Quantité" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="localisation" value="Je viens manger sur place"
+                  id="gridCheck" required>
+                <label class="form-check-label" for="gridCheck">
+                  Je viens manger sur place
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="localisation" value="Je viens chercher moi même"
+                  id="gridCheck2" required>
+                <label class="form-check-label" for="gridCheck2">
+                  Je viens chercher moi même
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="localisation" value="Je veux être livré"
+                  id="gridCheck3" required>
+                <label class="form-check-label" for="gridCheck3">
+                  Je veux être livré
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="valider()">Valider</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg></div>
+
+
+  <!-- Panier -->
+  <div class="basket-box shadow" data-toggle="modal" onclick="show_cart()" data-target=".basket-modal">
+    <div class="basket-content" data-count="0">
+      <i class="icon icon-shopping-cart"></i>
+    </div>
+  </div>
+
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <!-- <img src="..." class="rounded mr-2" alt="..."> -->
+      <strong class="mr-auto">Notification</strong>
+      <small class="text-muted">just now</small>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      Votre produit a bien été ajouté au panier.
+    </div>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <!-- 
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script> -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <!-- <script src="js/google-map.js"></script> -->
+  <script src="js/main.js"></script>
+  <script src="js/genuka.script.js"></script>
+  <!-- <script src="https://js.stripe.com/v3/"></script> -->
+  <script>
+
+    let produits = [];
+    let i = 0;
+
+
+    // document.querySelector(".plates").innerHTML = "";
+    // produits.forEach(plat => {
+    //   if (i < 3 || i > 5)
+    //     document.querySelector(".plates").innerHTML += '<div class="col-lg-4 d-flex ftco-animate"><div class="services-wrap d-flex"><a href="#" class="img" style="background-image: url(\'images/' + plat.image + '\');"></a><div class="text p-4"><h3>' + plat.name + '</h3><p>' + plat.description + '</p><p class="price"><span>€' + plat.price + ',00</span> <button class="ml-2 btn btn-white btn-outline-white" onclick="commander(' + i + ')">Commander</button></p></div></div></div>';
+    //   else
+    //     document.querySelector(".plates").innerHTML += '<div class="col-lg-4 d-flex ftco-animate"><div class="services-wrap d-flex"><a href="#" class="img order-lg-last" style="background-image: url(\'images/' + plat.image + '\');"></a><div class="text p-4"><h3>' + plat.name + '</h3><p>' + plat.description + '</p><p class="price"><span>€' + plat.price + ',00</span> <button class="ml-2 btn btn-white btn-outline-white" onclick="commander(' + i + ')">Commander</button></p></div></div></div>';
+    //   i++;
+    // });
+
+    var produit
+
+    // function commander(id) {
+    //   // $('#commanderModal').modal('toggle');
+    //   // document.commanderForm.commande.value = produits[id].name;
+    //   // produit = produits[id]
+
+    // }
+
+    function valider() {
+      let noms = document.commanderForm.names.value;
+      let tels = document.commanderForm.tel.value;
+      let adresse = document.commanderForm.adresse.value;
+      let commande = document.commanderForm.commande.value;
+      let quantite = document.commanderForm.quantite.value;
+      let localisation = document.commanderForm.localisation.value;
+      let mess = "https://api.whatsapp.com/send?phone=33782789689&text=" + encodeURI("Salut Monsieur, Je suis " + noms + ". Je suis à l'adresse : " + adresse + " et je souhaiterai avoir " + quantite + " plat(s) de " + commande + ". " + localisation + ". Je suis disponible ai numéro " + tels);
+      // window.open(mess, "_blank"); 
+      window.open("pages/payment.php?tel=" + tels + "&produit=" + produit.name + "&description=" + produit.description + "&image=" + produit.image + "&prix=" + produit.price + "&qte=" + quantite);
+    }
+  </script>
+
+
+
+  <script>
+
+		// if (!document.location.href.includes("https") && (!document.location.href.includes("localhost") && !document.location.href.includes("htdocs"))) {
+		// 	document.location.href = "https://ambassade-rouen.fr";
+		// }
+  </script>
+</body>
+
+</html>
