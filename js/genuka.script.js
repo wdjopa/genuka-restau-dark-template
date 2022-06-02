@@ -298,7 +298,7 @@ function loadShop(shop) {
               all_products[plat.id] = plat;
               $("#v-pills-" + collection.id + " .plates").append(`
                     <div class="col-lg-${get_value_division(products.length)} services-wrap d-flex">
-                      <a href="#" class="img ${parseInt(i / 3) % 2 == 0 ? "" : "order-lg-last"}" style="background-image: url('${plat.medias.length > 0 ? plat.medias[0].link : "https://via.placeholder.com/?text=Pas%20d'image"}');"></a>
+                      <a href="#" class="img ${parseInt(i / 3) % 2 == 0 ? "" : "order-lg-last"}" style="background-image: url('${plat.medias.length > 0 ? plat.medias[0].thumb : "https://via.placeholder.com/?text=Pas%20d'image"}');"></a>
                       <div class="text p-4">
                         <h3>${plat.name}</h3>
                         <div style="min-height: 100px;min-width: 100%">${plat.description == null ? "" : plat.description}</div>
