@@ -302,8 +302,10 @@ function loadShop(shop) {
                       <div class="text p-4">
                         <h3>${plat.name}</h3>
                         <div style="min-height: 100px;min-width: 100%">${plat.description == null ? "" : plat.description}</div>
-                        <p class="price"><span>${plat.price} ${shop.devise.symbol}</span> <a href="#!" class="ml-2 btn btn-white btn-outline-white"
-                        onclick="ajouter(${plat.id})">Ajouter</a></p>
+                        <p class="price"><span>${plat.price} ${shop.devise.symbol}</span>
+                         <a href="#!" class="ml-2 btn btn-white btn-outline-white d-none"
+                        onclick="ajouter(${plat.id})">Ajouter</a>
+                        </p>
                     </div>
                   </div>    
                 `);
