@@ -2,7 +2,7 @@ let datas = null;
 if (localStorage.getItem("client")) {
   datas = localStorage.getItem("client") ? JSON.parse(localStorage.getItem("client")).id : null;
 }
-let url = "https://api.genuka.com/2021-05";
+let url = "https://dashboard.genuka.com/api/2021-05";
 let storage_url = "https://dashboard.genuka.com/storage";
 
 let shop = null,
@@ -187,7 +187,7 @@ function order() {
     beforeSend: function (request) {
       request.setRequestHeader("Authorization", "Bearer " + token);
     },
-    url: "https://api.genuka.com/2021-05/commands",
+    url: "https://dashboard.genuka.com/api/2021-05/commands",
     contentType: "application/json",
     data: JSON.stringify({
       ...command,
@@ -223,14 +223,14 @@ function loadShop(shop) {
   // Chargement du token de la shop
   $.ajax({
     type: "GET",
-    url: "https://api.genuka.com/2021-05/shops/" + shop.id,
+    url: "https://dashboard.genuka.com/api/2021-05/shops/" + shop.id,
     contentType: "application/json",
     dataType: "json",
     success: (data) => {
       token = data.token;
     },
   });
-  // fetch("https://api.genuka.com/2021-05/shops/" + shop.id)
+  // fetch("https://dashboard.genuka.com/api/2021-05/shops/" + shop.id)
   //   .then((res) => res.json())
   //   .then((data) => {
   //     token = data.token;
@@ -267,7 +267,7 @@ function loadShop(shop) {
   // chargement des collections
   $.ajax({
     type: "GET",
-    url: "https://api.genuka.com/2021-05/companies/" + shop.id + "/collections?per_page=200",
+    url: "https://dashboard.genuka.com/api/2021-05/companies/" + shop.id + "/collections?per_page=200",
     contentType: "application/json",
     dataType: "json",
     success: (res) => {
@@ -289,7 +289,7 @@ function loadShop(shop) {
 
         $.ajax({
           type: "GET",
-          url: "https://api.genuka.com/2021-05/companies/" + shop.id + "/collections/" + collection.id + "?per_page=200",
+          url: "https://dashboard.genuka.com/api/2021-05/companies/" + shop.id + "/collections/" + collection.id + "?per_page=200",
           contentType: "application/json",
           dataType: "json",
           success: (res) => {
