@@ -258,9 +258,10 @@ function loadShop(shop) {
   $(".email-text").html(shop.email);
   // document.querySelector(".plates").innerHTML = "";
   if (shop.datas.settings && shop.datas.settings.social_networks) {
-    shop.datas.settings.social_networks?.forEach((social) => {
+    Object.keys(shop.datas.settings.social_networks)?.forEach((socialKey) => {
+      if(shop.datas.settings.social_networks[socialKey] !== null)
       $(".ftco-footer-social").append(`
-      <li class="ftco-animate"><a href="${social.link}"><span class="icon-${social.name}"></span></a></li>
+      <li class="ftco-animate"><a href="${shop.datas.settings.social_networks[socialKey]}"><span class="icon-${socialKey}"></span></a></li>
       `);
     });
   }
